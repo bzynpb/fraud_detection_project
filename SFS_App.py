@@ -1,22 +1,37 @@
 import numpy as np
 import pandas as pd
-from flask import Flask, request, jsonify, render_template
-import pickle
-import sys
-import logging
 
-app = Flask(__name__, template_folder='templates')
-app.config['EXPLAIN_TEMPLATE_LOADING'] = True
+import pickle
+
+
+st.set_page_config(page_title='Fraud Detection', page_icon="🔎", layout="wide")
+
+
 model = pickle.load(open("model.pkl", "rb"))
 scaler = pickle.load(open("scaler.pkl", "rb"))
 
 
-@app.route('/', methods=['GET'])
-def Home():
-    
-    return render_template('index.html')
 
-@app.route('/predict',methods=['POST'])
+coll_dict = {'V4':V4,
+             'V10':V10,
+             'V12':V12,
+             'V14': V14,
+             'V17': V17,
+    	     'Amount':Amount
+            }
+
+columns = ['V4',
+           'V10', 
+           'V12',
+           'V14', 
+           'V17',
+           'Amount'
+          ]
+
+df_coll = pd.DataFrame.from_dict([coll_dict])
+prediction = model.predict(user_inputs)
+
+
 def predict():
     print('Enter input values')
     my_dict = [float(x) for x in request.form.values()]
@@ -31,5 +46,5 @@ def predict():
     else:
         return render_template('index.html', prediction_text='PLEASE ENTER THE CORRECT VALUES IN THE FIELDS TO PREDICT THE FRAUD OF THE TRANSACTION.') 
 
-if __name__ == "__main__":
-    app.run(debug=True)
+
+
