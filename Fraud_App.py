@@ -81,7 +81,7 @@ set_background('b1.jpeg')
 	   'V16',
            'V17',
  
-c1, c2, c3  = st.columns((3)) # ekrani 2 kolona ayirdik
+c1, c2, c3  = st.columns((1,1,1)) # ekrani 3 kolona ayirdik
 with c1:
 	    V3=st.slider("V3", -48.32, 9.380, 0, step=0.05)
 	    V4=st.slider("V4", -5.68, 16.875, 0, step=0.05)
