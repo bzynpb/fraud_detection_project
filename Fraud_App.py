@@ -69,7 +69,7 @@ def set_background(png_file):
     </style>
     ''' % bin_str
     st.markdown(page_bg_img, unsafe_allow_html=True)
-set_background('b1.jpeg')
+set_background('b2.jpeg')
 
 
  
@@ -95,7 +95,7 @@ Slider_Cursor = st.markdown(''' <style> div.stSlider > div[data-baseweb="slider"
 Slider_Number = st.markdown(''' <style> div.stSlider > div[data-baseweb="slider"] > div > div > div > div { color: rgb(14, 38, 74); } </style>''', unsafe_allow_html = True)
 
 col = f''' <style> div.stSlider > div[data-baseweb = "slider"] > div > div {{ background: linear-gradient(to right, rgb(1, 183, 158) 0%, 
-					rgb(14, 38, 74) {V3}%, 
+					rgb(74, 47, 14) {V3}%, 
 					rgba(14, 38, 74, 0.25) {V3}%, 
 					rgba(14, 38, 74, 0.25) 100%); }} </style>'''
 
@@ -104,7 +104,6 @@ ColorSlider = st.markdown(col, unsafe_allow_html = True)
 
 
 model = joblib.load(open("rf_model.pkl", "rb"))
-
 
 coll_dict = {'V3':V3,
 	     'V4':V4,
@@ -129,18 +128,7 @@ columns = ['V3',
           ]
 
 df_coll = pd.DataFrame.from_dict([coll_dict])
-
 prediction = model.predict(df_coll)
-
-
-# def predict():
-#     print('Enter input values')
-#     my_dict = [float(x) for x in request.form.values()]
-#     my_dict = pd.DataFrame([my_dict])
-#     # my_dict = scaler.transform(my_dict)
-#     prediction = model.predict(my_dict)
-
-
 
 
 c1, c2, c3,c4,c5= st.columns((1,3,4,3,1)) 
