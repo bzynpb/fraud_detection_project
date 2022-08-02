@@ -81,25 +81,25 @@ st.markdown(html_temp2,unsafe_allow_html=True)
  
 col1, col2, col3, col4, col5  = st.columns((3,1,3,1,3)) # ekrani 3 kolona ayirdik
 with col1:
-	V3=st.slider("V3", -48.32, 9.380, -10.0, step=0.05)
-	st.write('\n')
-	V4=st.slider("V4", -5.68, 16.875, 0.0, step=0.05)
-	st.write('\n')
-    	V7=st.slider("V7", -43.557, 16.875, 5.0, step=1.0)
+    V3=st.slider("V3", -48.32, 9.380, -10.0, step=0.05)
+    st.write('\n')
+    V4=st.slider("V4", -5.68, 16.875, 0.0, step=0.05)
+    st.write('\n')
+    V7=st.slider("V7", -43.557, 16.875, 5.0, step=1.0)
 
 with col3:
-    	V10=st.slider("V10", -24.588, 23.745, 0.0, step=0.05)
-	st.write('\n')
-    	V11=st.slider("V11", -4.797, 12.019, 0.0, step=0.05)
-	st.write('\n')
-    	V12=st.slider("V12", -18.684, 7.848, 0.0, step=0.05)
+    V10=st.slider("V10", -24.588, 23.745, 0.0, step=0.05)
+    st.write('\n')
+    V11=st.slider("V11", -4.797, 12.019, 0.0, step=0.05)
+    st.write('\n')
+    V12=st.slider("V12", -18.684, 7.848, 0.0, step=0.05)
     
 with col5:
-    	V14=st.slider("V14", -19.214, 10.527, 0.0, step=0.05)
-	st.write('\n')
-    	V16=st.slider("V16", -14.130, 17.315, 0.0, step=0.05)
-	st.write('\n')
-    	V17=st.slider("V17", -25.163, 9.254, 0.0, step=0.05)
+    V14=st.slider("V14", -19.214, 10.527, 0.0, step=0.05)
+    st.write('\n')
+    V16=st.slider("V16", -14.130, 17.315, 0.0, step=0.05)
+    st.write('\n')
+    V17=st.slider("V17", -25.163, 9.254, 0.0, step=0.05)
  
 ## Slider color	
 ColorMinMax = st.markdown(''' <style> div.stSlider > div[data-baseweb = "slider"] > div[data-testid="stTickBar"] > div { background: rgb(1 1 1 / 0%); } </style>''', unsafe_allow_html = True)
