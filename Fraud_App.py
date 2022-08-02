@@ -12,7 +12,7 @@ button_style = """
 display: block;
 width: 100%;
 border: none;
-background-color: #008080;
+background-color: #002626;
 color: white;
 padding: 14px 28px;
 font-size: 24px;
@@ -46,7 +46,7 @@ st.markdown(button_style, unsafe_allow_html=True)
 
 ## Header
 html_temp = """
-<div style="background-color:#008080;padding:10px">
+<div style="background-color:#002626;padding:10px">
 <h1 style="color:white;text-align:center;">FRAUD DETECTION</h1>
 </div><br>"""
 st.markdown(html_temp,unsafe_allow_html=True)
@@ -74,7 +74,7 @@ def set_background(png_file):
 set_background('b2.jpeg')
 
 html_temp2 = """
-<div style="background-color:#5A7D9F;padding:10px">
+<div style="background-color:#4CA6A6;padding:10px">
 <h3 style="color:white;text-align:center;">Change the values below and check for fraud </h3>
 </div><br>"""
 st.markdown(html_temp2,unsafe_allow_html=True)
