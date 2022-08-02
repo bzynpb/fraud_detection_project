@@ -107,9 +107,9 @@ Slider_Cursor = st.markdown(''' <style> div.stSlider > div[data-baseweb="slider"
 Slider_Number = st.markdown(''' <style> div.stSlider > div[data-baseweb="slider"] > div > div > div > div { color: rgb(14, 38, 74); } </style>''', unsafe_allow_html = True)
 
 col = f''' <style> div.stSlider > div[data-baseweb = "slider"] > div > div {{ background: linear-gradient(to right, rgb(1, 183, 158) 0%, 
-					rgb(74, 47, 14) {V3}%, 
-					rgba(14, 38, 74, 0.25) {V3}%, 
-					rgba(14, 38, 74, 0.25) 100%); }} </style>'''
+					rgb(251, 92, 92) {V3}%, 
+					rgba(251, 92, 92, 0.25) {V3}%, 
+					rgba(251, 92, 92, 0.25) 100%); }} </style>'''
 
 ColorSlider = st.markdown(col, unsafe_allow_html = True)   
 
