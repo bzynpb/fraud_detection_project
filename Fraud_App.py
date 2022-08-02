@@ -51,7 +51,7 @@ html_temp = """
 </div><br>"""
 st.markdown(html_temp,unsafe_allow_html=True)
 
-st.image("f1.png")
+st.image("f3.png")
 st.write('\n')
 
 ## Background function
@@ -71,7 +71,7 @@ def set_background(png_file):
     </style>
     ''' % bin_str
     st.markdown(page_bg_img, unsafe_allow_html=True)
-set_background('f3.png')
+set_background('f2.png')
 
 html_temp2 = """
 <div style="background-color:#fb5c5c;padding:10px">
