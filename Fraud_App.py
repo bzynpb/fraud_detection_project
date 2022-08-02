@@ -103,7 +103,7 @@ with col5:
  
 ## Slider color	
 ColorMinMax = st.markdown(''' <style> div.stSlider > div[data-baseweb = "slider"] > div[data-testid="stTickBar"] > div { background: rgb(1, 1, 1 / 0%); } </style>''', unsafe_allow_html = True)
-Slider_Cursor = st.markdown(''' <style> div.stSlider > div[data-baseweb="slider"] > div > div > div[role="slider"]{ background-color: rgb(166, 36, 64); box-shadow: rgb(166, 36, 64 / 20%) 0px 0px 0px 0.3rem;} </style>''', unsafe_allow_html = True)
+Slider_Cursor = st.markdown(''' <style> div.stSlider > div[data-baseweb="slider"] > div > div > div[role="slider"]{ background-color: rgb(166, 36, 64); box-shadow: rgb(161, 178, 204 / 20%) 0px 0px 0px 0.3rem;} </style>''', unsafe_allow_html = True)
 Slider_Number = st.markdown(''' <style> div.stSlider > div[data-baseweb="slider"] > div > div > div > div { color: rgb(14, 38, 74); } </style>''', unsafe_allow_html = True)
 
 col = f''' <style> div.stSlider > div[data-baseweb = "slider"] > div > div {{ background: linear-gradient(to right, rgb(1, 183, 158) 0%, 
