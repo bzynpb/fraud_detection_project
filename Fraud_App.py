@@ -50,8 +50,9 @@ html_temp = """
 <h1 style="color:white;text-align:center;">FRAUD DETECTION</h1>
 </div><br>"""
 st.markdown(html_temp,unsafe_allow_html=True)
-st.write('\n')
+
 st.image("f1.jpeg")
+st.write('\n')
 
 ## Background function
 def get_base64(bin_file):
