@@ -102,7 +102,7 @@ with col5:
     V17=st.slider("V17", -25.163, 9.254, -20.0, step=0.05)
  
 ## Slider color	
-ColorMinMax = st.markdown(''' <style> div.stSlider > div[data-baseweb = "slider"] > div[data-testid="stTickBar"] > div { background: rgb(166, 36, 64 / 0%); } </style>''', unsafe_allow_html = True)
+ColorMinMax = st.markdown(''' <style> div.stSlider > div[data-baseweb = "slider"] > div[data-testid="stTickBar"] > div { background: rgb(1, 1, 1 / 0%); } </style>''', unsafe_allow_html = True)
 Slider_Cursor = st.markdown(''' <style> div.stSlider > div[data-baseweb="slider"] > div > div > div[role="slider"]{ background-color: rgb(166, 36, 64); box-shadow: rgb(14 38 74 / 20%) 0px 0px 0px 0.3rem;} </style>''', unsafe_allow_html = True)
 Slider_Number = st.markdown(''' <style> div.stSlider > div[data-baseweb="slider"] > div > div > div > div { color: rgb(166, 36, 64); } </style>''', unsafe_allow_html = True)
 
