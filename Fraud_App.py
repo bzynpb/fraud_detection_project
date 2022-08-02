@@ -71,15 +71,6 @@ def set_background(png_file):
     st.markdown(page_bg_img, unsafe_allow_html=True)
 set_background('b1.jpeg')
 
-['V3', 'V4', 'V7',
-           
- 'V10',
-	   'V11',
-           'V12',
- 
-           'V14',
-	   'V16',
-           'V17',
  
 col1, col2, col3  = st.columns((1,1,1)) # ekrani 3 kolona ayirdik
 with col1:
