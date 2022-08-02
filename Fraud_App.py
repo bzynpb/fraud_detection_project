@@ -51,6 +51,7 @@ html_temp = """
 </div><br>"""
 st.markdown(html_temp,unsafe_allow_html=True)
 st.write('\n')
+st.image("f1.jpeg")
 
 ## Background function
 def get_base64(bin_file):
@@ -71,7 +72,11 @@ def set_background(png_file):
     st.markdown(page_bg_img, unsafe_allow_html=True)
 set_background('b2.jpeg')
 
-
+html_temp2 = """
+<div style="background-color:#5A7D9F;padding:10px">
+<h3 style="color:white;text-align:center;">Change the values below and check for fraud </h3>
+</div><br>"""
+st.markdown(html_temp2,unsafe_allow_html=True)
  
 col1, col2, col3, col4, col5  = st.columns((3,1,3,1,3)) # ekrani 3 kolona ayirdik
 with col1:
@@ -133,7 +138,7 @@ prediction = model.predict(df_coll)
 
 c1, c2, c3,c4,c5= st.columns((1,3,4,3,1)) 
 with c3:
-    if c3.button("Predict Now!"):
+    if c3.button("CHECK NOW!"):
       
       if prediction[0] > 0.50:
           st.error('ATTENTION PLEASE !!!')
