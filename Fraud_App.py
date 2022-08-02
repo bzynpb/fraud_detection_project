@@ -147,11 +147,11 @@ with c3:
     if c3.button("Predict Now!"):
       
       if prediction[0] > 0.50:
-          return st.error('ATTENTION PLEASE !!!')
+          st.error('ATTENTION PLEASE !!!')
       elif prediction[0]  <= 0.50:
-          return st.success('EVERYTHING SEEMS OKAY...')
+          st.success('EVERYTHING SEEMS OKAY...')
       else:
-          return st.write('PLEASE ENTER THE CORRECT VALUES IN THE FIELDS TO PREDICT THE FRAUD OF THE TRANSACTION.') 
+          st.write('PLEASE ENTER THE CORRECT VALUES IN THE FIELDS TO PREDICT THE FRAUD OF THE TRANSACTION.') 
 
       
 hide_streamlit_style = """
