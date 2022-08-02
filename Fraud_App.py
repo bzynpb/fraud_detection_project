@@ -51,7 +51,7 @@ html_temp = """
 </div><br>"""
 st.markdown(html_temp,unsafe_allow_html=True)
 
-st.image("f1.jpeg")
+st.image("f2.jpeg")
 st.write('\n')
 
 ## Background function
