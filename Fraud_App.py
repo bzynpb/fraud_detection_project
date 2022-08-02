@@ -122,7 +122,7 @@ coll_dict = {'V3':V3,
              'V12':V12,
              'V14':V14,
 	     'V16':V16,
-             'V17': V17,
+             'V17': V17
             }
 
 columns = ['V3',
@@ -133,7 +133,7 @@ columns = ['V3',
            'V12',
            'V14',
 	   'V16',
-           'V17',
+           'V17'
           ]
 
 df_coll = pd.DataFrame.from_dict([coll_dict])
