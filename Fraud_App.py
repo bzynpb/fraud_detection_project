@@ -12,7 +12,7 @@ button_style = """
 display: block;
 width: 100%;
 border: none;
-background-color: #002626;
+background-color: #a62440;
 color: white;
 padding: 14px 28px;
 font-size: 24px;
@@ -46,7 +46,7 @@ st.markdown(button_style, unsafe_allow_html=True)
 
 ## Header
 html_temp = """
-<div style="background-color:#002626;padding:10px">
+<div style="background-color:#a62440;padding:10px">
 <h1 style="color:white;text-align:center;">FRAUD DETECTION</h1>
 </div><br>"""
 st.markdown(html_temp,unsafe_allow_html=True)
