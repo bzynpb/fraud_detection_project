@@ -74,7 +74,7 @@ def set_background(png_file):
 set_background('b2.jpeg')
 
 html_temp2 = """
-<div style="background-color:#4CA6A6;padding:10px">
+<div style="background-color:#fb5c5c;padding:10px">
 <h3 style="color:white;text-align:center;">Change the values below and check for fraud </h3>
 </div><br>"""
 st.markdown(html_temp2,unsafe_allow_html=True)
