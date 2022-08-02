@@ -143,7 +143,7 @@ df_coll = pd.DataFrame.from_dict([coll_dict])
 prediction = model.predict(df_coll)
 
 
-c1, c2, c3,c4,c5= st.columns((1,3,4,3,1)) 
+c1, c2, c3,c4,c5= st.columns((1,1,4,1,1)) 
 with c3:
     if c3.button("CHECK NOW!"):
       
