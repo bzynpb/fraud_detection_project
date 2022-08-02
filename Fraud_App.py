@@ -71,7 +71,7 @@ def set_background(png_file):
     </style>
     ''' % bin_str
     st.markdown(page_bg_img, unsafe_allow_html=True)
-set_background('f2.png')
+set_background('b2.png')
 
 html_temp2 = """
 <div style="background-color:#fb5c5c;padding:10px">
