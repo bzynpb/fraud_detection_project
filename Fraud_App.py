@@ -148,9 +148,9 @@ with c3:
     if c3.button("CHECK NOW!"):
       
       if prediction[0] > 0.50:
-          st.error('      🚨 ATTENTION PLEASE 🚨')
+          st.error('                        🚨 ATTENTION PLEASE 🚨')
       elif prediction[0]  <= 0.50:
-          st.success('  ✅ EVERYTHING SEEMS OKAY')
+          st.success('              ✅ EVERYTHING SEEMS OKAY')
       else:
           st.write('PLEASE ENTER THE CORRECT VALUES IN THE FIELDS TO PREDICT THE FRAUD OF THE TRANSACTION.') 
 
