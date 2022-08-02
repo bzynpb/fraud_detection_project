@@ -71,19 +71,20 @@ def set_background(png_file):
     st.markdown(page_bg_img, unsafe_allow_html=True)
 set_background('b1.jpeg')
 
+
  
-col1, col2, col3  = st.columns((1,1,1)) # ekrani 3 kolona ayirdik
+col1, col2, col3, col4, col5  = st.columns((3,1,3,1,3)) # ekrani 3 kolona ayirdik
 with col1:
-    V3=st.slider("V3", -48.32, 9.380, -10.0, step=0.05)
+    V3=st.slider(<*font color=‘red’>THIS TEXT WILL BE RED</*font>, unsafe_allow_html=True), -48.32, 9.380, -10.0, step=0.05)
     V4=st.slider("V4", -5.68, 16.875, 0.0, step=0.05)
     V7=st.slider("V7", -43.557, 16.875, 5.0, step=1.0)
 
-with col2:
+with col3:
     V10=st.slider("V10", -24.588, 23.745, 0.0, step=0.05)
     V11=st.slider("V11", -4.797, 12.019, 0.0, step=0.05)
     V12=st.slider("V12", -18.684, 7.848, 0.0, step=0.05)
     
-with col3:
+with col5:
     V14=st.slider("V14", -19.214, 10.527, 0.0, step=0.05)
     V16=st.slider("V16", -14.130, 17.315, 0.0, step=0.05)
     V17=st.slider("V17", -25.163, 9.254, 0.0, step=0.05)
