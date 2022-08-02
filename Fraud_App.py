@@ -74,9 +74,9 @@ set_background('b1.jpeg')
  
 col1, col2, col3  = st.columns((1,1,1)) # ekrani 3 kolona ayirdik
 with col1:
-    V3=st.slider("V3", -48.32, 9.380, 0.0, step=0.05)
+    V3=st.slider("V3", -48.32, 9.380, -10.0, step=0.05)
     V4=st.slider("V4", -5.68, 16.875, 0.0, step=0.05)
-    V7=st.slider("V7", -43.557, 16.875, 50.0, step=1)
+    V7=st.slider("V7", -43.557, 16.875, 5.0, step=1)
 
 with col2:
     V10=st.slider("V10", -24.588, 23.745, 0.0, step=0.05)
