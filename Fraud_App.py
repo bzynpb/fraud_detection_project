@@ -117,7 +117,7 @@ model = joblib.load(open("rf_model.pkl", "rb"))
 coll_dict = {'V3':V3,
 	     'V4':V4,
 	     'V7':V7,
-             'V10':V10,
+	     'V10':V10,
 	     'V11':V11,
              'V12':V12,
              'V14':V14,
