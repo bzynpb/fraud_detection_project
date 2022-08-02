@@ -5,7 +5,7 @@ import numpy as np
 import streamlit as st
 import base64
 
-st.set_page_config(page_title='Fraud Detection', page_icon="🔎", layout="wide")
+st.set_page_config(page_title='Fraud Detection', page_icon="🔎")
 
 button_style = """ 
 <style> div.stButton > button:first-child { 
