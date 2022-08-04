@@ -7,15 +7,7 @@ import base64
 
 st.set_page_config(page_title='Fraud Detection', page_icon="🔎", layout="wide")
 
-mystyle = '''
-    <style>
-        p {
-            text-align: justify;
-        }
-    </style>
-    '''
 
-st.markdown(mystyle, unsafe_allow_html=True)
 
 button_style = """ 
 <style> div.stButton > button:first-child { 
@@ -152,6 +144,16 @@ columns = ['V3',
 df_coll = pd.DataFrame.from_dict([coll_dict])
 prediction = model.predict(df_coll)
 
+
+mystyle = '''
+    <style>
+        p {
+            text-align: justify;
+        }
+    </style>
+    '''
+
+st.markdown(mystyle, unsafe_allow_html=True)
 
 c1, c2, c3,c4,c5= st.columns((1,1,3,1,1)) 
 with c3:
