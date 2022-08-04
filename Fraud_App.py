@@ -5,8 +5,7 @@ import numpy as np
 import streamlit as st
 import base64
 
-st.set_page_config(page_title='Fraud Detection', page_icon="🔎")
-#, layout="wide"
+st.set_page_config(page_title='Fraud Detection', page_icon="🔎", layout="wide"
 
 
 button_style = """ 
@@ -81,7 +80,7 @@ html_temp2 = """
 </div><br>"""
 st.markdown(html_temp2,unsafe_allow_html=True)
  
-col1, col2, col3, col4, col5  = st.columns((3,1,3,1,3)) # ekrani 3 kolona ayirdik
+col1, col2, col3, col4, col5  = st.columns((3,2,3,2,3)) # ekrani 3 kolona ayirdik
 with col1:
     V3=st.slider("V3", -48.32, 9.380, -14.0, step=0.05)
     st.write('\n')
