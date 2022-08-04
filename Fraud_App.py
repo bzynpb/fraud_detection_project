@@ -7,6 +7,15 @@ import base64
 
 st.set_page_config(page_title='Fraud Detection', page_icon="🔎", layout="wide")
 
+mystyle = '''
+    <style>
+        p {
+            text-align: justify;
+        }
+    </style>
+    '''
+
+st.markdown(mystyle, unsafe_allow_html=True)
 
 button_style = """ 
 <style> div.stButton > button:first-child { 
